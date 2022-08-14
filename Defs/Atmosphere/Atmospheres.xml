@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<TAE.AtmosphericDef>
+		<defName>Oxygen</defName>
+		<atmosphericTag>Air</atmosphericTag>
+		<labelShort>O2</labelShort>
+		<valueColor>(25,125,255)</valueColor>
+	</TAE.AtmosphericDef>
+	
+	<TAE.AtmosphericBiomeRuleSetDef>
+		<defName>OxygenAtmosphere</defName>
+		<occurence>AnyBiome</occurence>
+		<atmospheres>
+			<Oxygen>0.85</Oxygen>
+		</atmospheres>
+	</TAE.AtmosphericBiomeRuleSetDef>
+	
+</Defs>

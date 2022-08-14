@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>NeedMoreOxygen</id>
+    <version>1.0.0</version>
+    <authors>Telefonmast (aka Maxim)</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="Krafs.Rimworld.Ref" version="1.3.3389" exclude="Build,Analyzers" />
+        <dependency id="Lib.Harmony" version="2.2.2" exclude="Runtime,Build,Analyzers" />
+        <dependency id="Microsoft.NETCore.Platforms" version="6.0.5" exclude="Build,Analyzers" />
+        <dependency id="RimWorld.MultiplayerAPI" version="0.4.0" exclude="Runtime,Build,Analyzers" />
+        <dependency id="TaskPubliciser" version="1.0.3" exclude="Build,Analyzers" />
+        <dependency id="TeleCore" version="1.0.16" exclude="Build,Analyzers" />
+        <dependency id="UnlimitedHugs.Rimworld.HugsLib" version="9.0.1" exclude="Runtime,Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Runtime" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="System.Runtime.InteropServices" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="System.Threading.Thread" targetFramework=".NETFramework4.7.2" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\NeedMoreOxygen\Assemblies\NeedMoreOxygen.dll" target="lib\net472\NeedMoreOxygen.dll" />
+  </files>
+</package>
