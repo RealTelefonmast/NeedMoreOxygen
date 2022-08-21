@@ -4,3 +4,5 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\NeedMoreOxygen\Sourc
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\NeedMoreOxygen\Assemblies\NeedMoreOxygen.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\NeedMoreOxygen\Source\NMO\NeedMoreOxygen\obj\Debug\NeedMoreOxygen.csproj.CopyComplete
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\NeedMoreOxygen\Source\NMO\NeedMoreOxygen\obj\Debug\NeedMoreOxygen.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\NeedMoreOxygen\Source\NMO\NeedMoreOxygen\obj\Debug\NeedMoreOxygen.AssemblyInfoInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\NeedMoreOxygen\Source\NMO\NeedMoreOxygen\obj\Debug\NeedMoreOxygen.AssemblyInfo.cs

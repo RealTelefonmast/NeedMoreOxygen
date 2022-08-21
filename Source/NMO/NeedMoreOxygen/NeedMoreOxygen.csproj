@@ -1,34 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <RootNamespace>NMO</RootNamespace>
-    <AssemblyName>NeedMoreOxygen</AssemblyName>
-    <TargetFramework>net472</TargetFramework>
-    <LangVersion>latest</LangVersion>
-    <PlatformTarget>x64</PlatformTarget>
-    <OutputPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\NeedMoreOxygen\Assemblies\</OutputPath>
-    <Optimize>true</Optimize>
-    <DebugType>none</DebugType>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	<PropertyGroup>
+		<RootNamespace>NMO</RootNamespace>
+		<AssemblyName>NeedMoreOxygen</AssemblyName>
+		<TargetFramework>net48</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<PlatformTarget>x64</PlatformTarget>
+		<OutputPath>..\..\..\Assemblies\</OutputPath>
+		<Optimize>true</Optimize>
+		<DebugType>none</DebugType>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<Authors>Telefonmast (aka Maxim)</Authors>
+		<Company>Telefonmast</Company>
+		<BaseOutputPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\NeedMoreOxygen\Assemblies</BaseOutputPath>
+		<UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+	</PropertyGroup>
 
-    <Authors>Telefonmast (aka Maxim)</Authors>
-    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
-    <Company>Telefonmast</Company>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DefineConstants>TRACE;DEBUG</DefineConstants>
-    <WarningLevel>4</WarningLevel>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants>TRACE;DEBUG</DefineConstants>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DefineConstants>TRACE;DEBUG</DefineConstants>
+		<WarningLevel>4</WarningLevel>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	</PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref" Version="*" GeneratePathProperty="true" />
@@ -49,6 +43,7 @@
       <HintPath>..\..\AtmosphereExtended.dll</HintPath>
       <ExcludeAssets>runtime</ExcludeAssets>
       <CopyLocal>False</CopyLocal>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
   </ItemGroup>
 
@@ -84,6 +79,4 @@
       <Reference Remove="$(PkgKrafs_Rimworld_Ref)\ref\net472\Assembly-CSharp.dll" />
     </ItemGroup>
   </Target>
-
-
 </Project>

@@ -8,12 +8,12 @@
 		<valueColor>(25,125,255)</valueColor>
 	</TAE.AtmosphericDef>
 	
-	<TAE.AtmosphericBiomeRuleSetDef>
+	<TAE.TAE_RulesetDef>
 		<defName>OxygenAtmosphere</defName>
 		<occurence>AnyBiome</occurence>
 		<atmospheres>
-			<Oxygen>0.85</Oxygen>
+			<Oxygen>1</Oxygen>
 		</atmospheres>
-	</TAE.AtmosphericBiomeRuleSetDef>
+	</TAE.TAE_RulesetDef>
 	
 </Defs>

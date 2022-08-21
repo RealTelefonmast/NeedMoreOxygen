@@ -13,7 +13,7 @@ namespace NMO
     public static class NMODefOf
     {
         public static AtmosphericDef Oxygen;
-        public static AtmosphericBiomeRuleSetDef OxygenAtmosphere;
+        public static TAE_RulesetDef OxygenAtmosphere;
         public static HediffDef Hypoxia;
     }
 }

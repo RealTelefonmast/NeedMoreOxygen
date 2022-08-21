@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TeleCore.NetworkValueDef>
+		<defName>Oxygen</defName>
+		<networkDef>AtmosphericNetwork</networkDef>
+		<label>oxygen</label>
+		<valueColor>(140, 230, 255)</valueColor>
+	</TeleCore.NetworkValueDef>
+
+</Defs>
