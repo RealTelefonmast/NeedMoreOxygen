@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using NMO.Oxygen;
 using RimWorld;
 using TAE;
-using TeleCore;
 using UnityEngine;
 using Verse;
 
@@ -68,7 +67,7 @@ namespace NMO
                     atmosTracker.RoomComp.TryRemoveValue(NMODefOf.Oxygen, 1, out _);
             }
 
-            if (CurLevel <= 0.70f)
+            if (CurLevel <= 0.75f)
             {
                 HealthUtility.AdjustSeverity(this.pawn, NMODefOf.Hypoxia, 1 - CurLevel);
             }

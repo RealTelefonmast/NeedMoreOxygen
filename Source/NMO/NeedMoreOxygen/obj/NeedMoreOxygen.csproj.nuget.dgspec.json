@@ -68,9 +68,8 @@
               "version": "[1.0.3, )"
             },
             "TeleCore": {
-              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[1.2.8, )"
             },
             "UnlimitedHugs.Rimworld.HugsLib": {
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",

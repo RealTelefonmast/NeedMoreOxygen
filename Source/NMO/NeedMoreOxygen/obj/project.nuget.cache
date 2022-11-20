@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aGct+3Ltimnd/BSbr06u9gzf1jDaI19eUJDxhzTJLRKmLPLHLqgVGD+A1qsk3BgkYuwCX9Lfr9P6EB3lRI+CvA==",
+  "dgSpecHash": "vTDgafN0YRmc6qND9CHE1sclLswP5iWwAJpSaUc0PO2EMVH9Zq16852n1bxN/UgJDWbB3jgp7zsf4UdNQYI8TQ==",
   "success": true,
   "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NeedMoreOxygen\\Source\\NMO\\NeedMoreOxygen\\NeedMoreOxygen.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,7 @@
     "C:\\Users\\maxim\\.nuget\\packages\\lib.harmony\\2.2.2\\lib.harmony.2.2.2.nupkg.sha512",
     "C:\\Users\\maxim\\.nuget\\packages\\microsoft.build.framework\\15.1.548\\microsoft.build.framework.15.1.548.nupkg.sha512",
     "C:\\Users\\maxim\\.nuget\\packages\\microsoft.build.utilities.core\\15.1.548\\microsoft.build.utilities.core.15.1.548.nupkg.sha512",
-    "C:\\Users\\maxim\\.nuget\\packages\\microsoft.netcore.platforms\\6.0.5\\microsoft.netcore.platforms.6.0.5.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\microsoft.netcore.platforms\\6.0.6\\microsoft.netcore.platforms.6.0.6.nupkg.sha512",
     "C:\\Users\\maxim\\.nuget\\packages\\rimworld.multiplayerapi\\0.4.0\\rimworld.multiplayerapi.0.4.0.nupkg.sha512",
     "C:\\Users\\maxim\\.nuget\\packages\\system.collections\\4.0.11\\system.collections.4.0.11.nupkg.sha512",
     "C:\\Users\\maxim\\.nuget\\packages\\system.diagnostics.debug\\4.0.11\\system.diagnostics.debug.4.0.11.nupkg.sha512",
@@ -18,7 +18,7 @@
     "C:\\Users\\maxim\\.nuget\\packages\\system.threading\\4.0.11\\system.threading.4.0.11.nupkg.sha512",
     "C:\\Users\\maxim\\.nuget\\packages\\system.threading.thread\\4.0.0\\system.threading.thread.4.0.0.nupkg.sha512",
     "C:\\Users\\maxim\\.nuget\\packages\\taskpubliciser\\1.0.3\\taskpubliciser.1.0.3.nupkg.sha512",
-    "C:\\Users\\maxim\\.nuget\\packages\\telecore\\1.2.0\\telecore.1.2.0.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\telecore\\1.2.8\\telecore.1.2.8.nupkg.sha512",
     "C:\\Users\\maxim\\.nuget\\packages\\unlimitedhugs.rimworld.hugslib\\9.0.1\\unlimitedhugs.rimworld.hugslib.9.0.1.nupkg.sha512"
   ],
   "logs": []

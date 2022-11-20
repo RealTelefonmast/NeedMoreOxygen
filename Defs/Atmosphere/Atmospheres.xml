@@ -3,9 +3,12 @@
   
 	<TAE.AtmosphericDef>
 		<defName>Oxygen</defName>
-		<atmosphericTag>Air</atmosphericTag>
+		<label>Oxygen</label>
 		<labelShort>O2</labelShort>
+		<atmosphericTag>Air</atmosphericTag>
+		<networkValue>Oxygen</networkValue>
 		<valueColor>(25,125,255)</valueColor>
+		<useRenderLayer>true</useRenderLayer>
 	</TAE.AtmosphericDef>
 	
 	<TAE.TAE_RulesetDef>
