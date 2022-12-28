@@ -46,22 +46,22 @@
           "dependencies": {
             "Krafs.Rimworld.Ref": {
               "target": "Package",
-              "version": "[*, )",
+              "version": "[1.4.3580, )",
               "generatePathProperty": true
             },
             "Lib.Harmony": {
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[*, )"
+              "version": "[2.2.2, )"
             },
             "Microsoft.NETCore.Platforms": {
               "target": "Package",
-              "version": "[*, )"
+              "version": "[7.0.0, )"
             },
             "RimWorld.MultiplayerAPI": {
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[*, )"
+              "version": "[0.4.0, )"
             },
             "TaskPubliciser": {
               "target": "Package",
@@ -69,15 +69,15 @@
             },
             "TeleCore": {
               "target": "Package",
-              "version": "[1.2.8, )"
+              "version": "[1.6.1, )"
             },
             "UnlimitedHugs.Rimworld.HugsLib": {
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[*, )"
+              "version": "[10.0.1, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

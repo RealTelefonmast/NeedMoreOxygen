@@ -2,11 +2,11 @@
 <Defs>
   
 	<TAE.AtmosphericDef>
-		<defName>Oxygen</defName>
-		<label>Oxygen</label>
+		<defName>Atmosphere_Oxygen</defName>
+		<label>oxygen</label>
 		<labelShort>O2</labelShort>
 		<atmosphericTag>Air</atmosphericTag>
-		<networkValue>Oxygen</networkValue>
+		<networkValue>Network_Oxygen</networkValue>
 		<valueColor>(25,125,255)</valueColor>
 		<useRenderLayer>true</useRenderLayer>
 	</TAE.AtmosphericDef>
@@ -15,7 +15,7 @@
 		<defName>OxygenAtmosphere</defName>
 		<occurence>AnyBiome</occurence>
 		<atmospheres>
-			<Oxygen>1</Oxygen>
+			<Atmosphere_Oxygen>1</Atmosphere_Oxygen>
 		</atmospheres>
 	</TAE.TAE_RulesetDef>
 	

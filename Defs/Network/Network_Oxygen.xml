@@ -2,9 +2,9 @@
 <Defs>
 
 	<TeleCore.NetworkValueDef>
-		<defName>Oxygen</defName>
-		<networkDef>AtmosphericNetwork</networkDef>
+		<defName>Network_Oxygen</defName>
 		<label>oxygen</label>
+		<networkDef>AtmosphericNetwork</networkDef>
 		<valueColor>(140, 230, 255)</valueColor>
 	</TeleCore.NetworkValueDef>
 
