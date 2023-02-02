@@ -12,10 +12,13 @@
 				<minSeverity>0.15</minSeverity>
 				<label>trivial</label>
 				<socialFightChanceFactor>1.5</socialFightChanceFactor>
-				<hungerRateFactorOffset>0.5</hungerRateFactorOffset>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
+						<offset>-0.05</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
 						<offset>-0.05</offset>
 					</li>
 				</capMods>
@@ -24,11 +27,14 @@
 				<minSeverity>0.35</minSeverity>
 				<label>minor</label>
 				<socialFightChanceFactor>2</socialFightChanceFactor>
-				<hungerRateFactorOffset>0.6</hungerRateFactorOffset>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
 						<offset>-0.10</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.25</offset>
 					</li>
 				</capMods>
 			</li>
@@ -36,11 +42,14 @@
 				<minSeverity>0.45</minSeverity>
 				<label>moderate</label>
 				<socialFightChanceFactor>2.5</socialFightChanceFactor>
-				<hungerRateFactorOffset>0.6</hungerRateFactorOffset>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
 						<offset>-0.20</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.35</offset>
 					</li>
 				</capMods>
 			</li>
@@ -48,23 +57,29 @@
 				<minSeverity>0.6</minSeverity>
 				<label>severe</label>
 				<socialFightChanceFactor>3</socialFightChanceFactor>
-				<hungerRateFactorOffset>0.6</hungerRateFactorOffset>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
 						<offset>-0.30</offset>
 					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.50</offset>
+					</li>
 				</capMods>
 			</li>
 			<li>
-				<minSeverity>0.8</minSeverity>
+				<minSeverity>0.9</minSeverity>
 				<label>extreme</label>
 				<lifeThreatening>true</lifeThreatening>
-				<hungerRateFactorOffset>0.6</hungerRateFactorOffset>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
-						<setMax>0.1</setMax>
+						<offset>-0.50</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-1</offset>
 					</li>
 				</capMods>
 			</li>

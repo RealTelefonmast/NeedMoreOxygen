@@ -24,12 +24,10 @@ namespace NMO
 
         public BreathingExtension BreathingProps => pawn.kindDef.GetModExtension<BreathingExtension>();
 
-        public float BreathingLevelRequired => BreathingProps?.OxygenLevelPercentageWantBreathe ?? 1;
-
-        public bool Asphyxiating => this.CurCategory == OxygenCategory.Hypoxia;
-
+        public float BreathingLevelRequired => BreathingProps?.OxygenLevelPercentageWantBreathe ?? 0.75f;
         public float PercentageThreshUrgentlyOxygenDeprived => BreathingLevelRequired * 0.4f;
-
+        public bool Suffocating => CurCategory == OxygenCategory.Hypoxia;
+        
         public Need_Oxygen(Pawn pawn) : base(pawn)
         {
             atmosTracker = Comp_PawnAtmosphereTracker.CompFor(pawn);
@@ -39,11 +37,11 @@ namespace NMO
         {
             get
             {
-                if (base.CurLevelPercentage <= 0f)
+                if (CurLevelPercentage <= 0f)
                 {
                     return OxygenCategory.Hypoxia;
                 }
-                if (base.CurLevelPercentage < this.PercentageThreshUrgentlyOxygenDeprived)
+                if (CurLevelPercentage < PercentageThreshUrgentlyOxygenDeprived)
                 {
                     return OxygenCategory.Low;
                 }
@@ -64,25 +62,8 @@ namespace NMO
                 CurLevel = atmosTracker.Container.StoredPercentOf(NMODefOf.Atmosphere_Oxygen);
 
                 if (!atmosTracker.IsOutside)
-                    atmosTracker.RoomComp.TryRemoveValue(NMODefOf.Atmosphere_Oxygen, 1, out _);
+                    atmosTracker.RoomComp.TryRemoveValue(NMODefOf.Atmosphere_Oxygen, 2, out _);
             }
-
-            if (CurLevel <= 0.75f)
-            {
-                HealthUtility.AdjustSeverity(this.pawn, NMODefOf.Hypoxia, 1 - CurLevel);
-            }
-
-            /*
-            if (CurCategory == OxygenCategory.Low)
-            {
-                HealthUtility.AdjustSeverity(this.pawn, NMODefOf.Hypoxia, 0.25f);
-            }
-
-            if (Asphyxiating)
-            {
-                HealthUtility.AdjustSeverity(this.pawn, NMODefOf.Hypoxia, 0.85f);
-            }
-            */
         }
     }
 }
