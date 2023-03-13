@@ -59,7 +59,7 @@ namespace NMO
 
             if (atmosTracker != null)
             {
-                CurLevel = atmosTracker.Container.StoredPercentOf(NMODefOf.Atmosphere_Oxygen);
+                CurLevel = atmosTracker.Container.StoredValueOf(NMODefOf.Atmosphere_Oxygen);
 
                 if (!atmosTracker.IsOutside)
                     atmosTracker.RoomComp.TryRemoveValue(NMODefOf.Atmosphere_Oxygen, 2, out _);

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aHz/CFdwGHbbMp8i0/YBOAd9AiccoSGTgtTn53n0RkPRuIWevHo4GJTQN1POsNd61GeYFKRuM8lD9TXowsPQgA==",
+  "dgSpecHash": "ZYPw0HPL+sPsihTp0W3zd11mtBFL/ro1MYbYWGrmw1r8mmS/ExZ7NHPSUJlj1uz2oN9e7DqNkU46N9KTi5NlFw==",
   "success": true,
   "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NeedMoreOxygen\\Source\\NMO\\NeedMoreOxygen\\NeedMoreOxygen.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\maxim\\.nuget\\packages\\krafs.rimworld.ref\\1.4.3580\\krafs.rimworld.ref.1.4.3580.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\krafs.rimworld.ref\\1.4.3641\\krafs.rimworld.ref.1.4.3641.nupkg.sha512",
     "C:\\Users\\maxim\\.nuget\\packages\\lib.harmony\\2.2.2\\lib.harmony.2.2.2.nupkg.sha512",
     "C:\\Users\\maxim\\.nuget\\packages\\microsoft.build.framework\\15.1.548\\microsoft.build.framework.15.1.548.nupkg.sha512",
     "C:\\Users\\maxim\\.nuget\\packages\\microsoft.build.utilities.core\\15.1.548\\microsoft.build.utilities.core.15.1.548.nupkg.sha512",
@@ -18,7 +18,7 @@
     "C:\\Users\\maxim\\.nuget\\packages\\system.threading\\4.0.11\\system.threading.4.0.11.nupkg.sha512",
     "C:\\Users\\maxim\\.nuget\\packages\\system.threading.thread\\4.0.0\\system.threading.thread.4.0.0.nupkg.sha512",
     "C:\\Users\\maxim\\.nuget\\packages\\taskpubliciser\\1.0.3\\taskpubliciser.1.0.3.nupkg.sha512",
-    "C:\\Users\\maxim\\.nuget\\packages\\telecore\\1.6.1\\telecore.1.6.1.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\telecore\\1.7.8.4\\telecore.1.7.8.4.nupkg.sha512",
     "C:\\Users\\maxim\\.nuget\\packages\\unlimitedhugs.rimworld.hugslib\\10.0.1\\unlimitedhugs.rimworld.hugslib.10.0.1.nupkg.sha512"
   ],
   "logs": []

@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\maxim\\Desktop\\PackageStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -46,7 +47,7 @@
           "dependencies": {
             "Krafs.Rimworld.Ref": {
               "target": "Package",
-              "version": "[1.4.3580, )",
+              "version": "[1.4.3641, )",
               "generatePathProperty": true
             },
             "Lib.Harmony": {
@@ -69,7 +70,7 @@
             },
             "TeleCore": {
               "target": "Package",
-              "version": "[1.6.1, )"
+              "version": "[1.7.8.4, )"
             },
             "UnlimitedHugs.Rimworld.HugsLib": {
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
