@@ -8,15 +8,25 @@
 		<atmosphericTag>Air</atmosphericTag>
 		<networkValue>Network_Oxygen</networkValue>
 		<valueColor>(25,125,255)</valueColor>
-		<useRenderLayer>true</useRenderLayer>
+		<useRenderLayer>false</useRenderLayer>
 	</TAE.AtmosphericDef>
 	
-	<TAE.TAE_RulesetDef>
+	<TAE.AtmosphericDef>
+		<defName>Atmosphere_CarbonMonoxide</defName>
+		<label>carbon monoxide</label>
+		<labelShort>CO</labelShort>
+		<atmosphericTag>Air</atmosphericTag>
+		<networkValue>Network_Oxygen</networkValue>
+		<valueColor>(73,76,84)</valueColor>
+		<useRenderLayer>false</useRenderLayer>
+	</TAE.AtmosphericDef>
+	
+	<TAE.TAERulesetDef>
 		<defName>OxygenAtmosphere</defName>
 		<occurence>AnyBiome</occurence>
 		<atmospheres>
 			<Atmosphere_Oxygen>1</Atmosphere_Oxygen>
 		</atmospheres>
-	</TAE.TAE_RulesetDef>
+	</TAE.TAERulesetDef>
 	
 </Defs>

@@ -20,17 +20,68 @@ namespace NMO
 
     public class Need_Oxygen : Need
     {
-        private Comp_PawnAtmosphereTracker atmosTracker;
+        private Comp_PawnAtmosphereTracker _atmosTracker;
+        private BreathingExtension _cachedProps;
 
-        public BreathingExtension BreathingProps => pawn.kindDef.GetModExtension<BreathingExtension>();
+        public BreathingExtension BreathingProps => _cachedProps;
 
         public float BreathingLevelRequired => BreathingProps?.OxygenLevelPercentageWantBreathe ?? 0.75f;
         public float PercentageThreshUrgentlyOxygenDeprived => BreathingLevelRequired * 0.4f;
-        public bool Suffocating => CurCategory == OxygenCategory.Hypoxia;
-        
+
+        /*
+        private float HypoxiaFactorBase
+        {
+            get
+            {
+                float baseFactor = 0f;
+
+                if (!pawn.health.capacities.CapableOf(PawnCapacityDefOf.Breathing)) return 0f;
+
+                var breathing = pawn.health.capacities.GetLevel(PawnCapacityDefOf.Breathing);
+                var bloodPumping = pawn.health.capacities.GetLevel(PawnCapacityDefOf.BloodPumping);
+                var consciousness = pawn.health.capacities.GetLevel(PawnCapacityDefOf.Consciousness);
+
+                baseFactor += 1 - (breathing * bloodPumping * consciousness);
+
+                // Incorporate health conditions
+                if (pawn.health.hediffSet.HasHediff(HediffDefOf.Hypothermia))
+                {
+                    baseFactor *= 1.25f;
+                }
+
+                if (pawn.health.hediffSet.HasHediff(HediffDefOf.Asthma))
+                {
+                    baseFactor *= 2;
+                }
+
+                return 1 + baseFactor;
+            }
+        }
+
+        private float HypoxiaSeverityPerInterval
+        {
+            get
+            {
+                var hypoxiaFactor = HypoxiaFactorBase;
+                if (hypoxiaFactor <= 0) return 0;
+                
+                var levelFactor = 1f - CurLevel;
+                return hypoxiaFactor * levelFactor * (HypoxiaSeverityFactor * Mathf.Lerp(0.8f, 1.2f, Rand.ValueSeeded(pawn.thingIDNumber ^ 2551674)));
+            }
+        }
+        */
+
+        //States
+        public bool Suffocating => CurCategory != OxygenCategory.Saturated;
+        public override bool IsFrozen => base.IsFrozen || pawn.Deathresting;
+
+        //TODO: Add a way to track whether room is getting filled or not
+        public override int GUIChangeArrow { get; }
+
         public Need_Oxygen(Pawn pawn) : base(pawn)
         {
-            atmosTracker = Comp_PawnAtmosphereTracker.CompFor(pawn);
+            _atmosTracker = Comp_PawnAtmosphereTracker.CompFor(pawn);
+            _cachedProps = pawn.kindDef.GetModExtension<BreathingExtension>();
         }
 
         public OxygenCategory CurCategory
@@ -57,12 +108,30 @@ namespace NMO
                 return;
             }
 
-            if (atmosTracker != null)
+            if (_atmosTracker != null)
             {
-                CurLevel = atmosTracker.Container.StoredValueOf(NMODefOf.Atmosphere_Oxygen);
+                CurLevel = _atmosTracker.Container.StoredPercentOf(NMODefOf.Atmosphere_Oxygen);
 
-                if (!atmosTracker.IsOutside)
-                    atmosTracker.RoomComp.TryRemoveValue(NMODefOf.Atmosphere_Oxygen, 2, out _);
+                if (!_atmosTracker.IsOutside)
+                    _atmosTracker.RoomComp.TryRemoveValue(NMODefOf.Atmosphere_Oxygen, 2, out _);
+            }
+
+            if (!IsFrozen || pawn.Deathresting)
+            {
+                var hasHypoxia = pawn.health.hediffSet.GetFirstHediff<Hediff_Hypoxia>();
+                if (Suffocating)
+                {
+                    var hypoxia = hasHypoxia ?? (Hediff_Hypoxia) pawn.health.AddHediff(NMODefOf.Hypoxia);
+                    var inverse = Mathf.InverseLerp(1f, 0.5f, CurLevel);
+                    var lerp = Mathf.Lerp(0, 0.5f, inverse);
+                    hypoxia.Severity = lerp; 
+                }
+                else if (hasHypoxia != null)
+                {
+                    pawn.health.RemoveHediff(hasHypoxia);
+                    if(!pawn.health.hediffSet.HasHediff(NMODefOf.HypoxiaSickness))
+                        pawn.health.AddHediff(NMODefOf.HypoxiaSickness);
+                }
             }
         }
     }
