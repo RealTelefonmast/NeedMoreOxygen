@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.8": {
-      "Krafs.Rimworld.Ref/1.4.3641": {
+      "Krafs.Rimworld.Ref/1.4.3704": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -138,7 +138,7 @@
           }
         }
       },
-      "Microsoft.NETCore.Platforms/7.0.0": {
+      "Microsoft.NETCore.Platforms/7.0.4": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -239,7 +239,7 @@
           "build/TaskPubliciser.props": {}
         }
       },
-      "TeleCore/1.7.8.4": {
+      "TeleCore/1.8.9.3": {
         "type": "package",
         "frameworkAssemblies": [
           "System.Runtime",
@@ -276,17 +276,17 @@
     }
   },
   "libraries": {
-    "Krafs.Rimworld.Ref/1.4.3641": {
-      "sha512": "AbRRJDu8b7g2O/k1ETspTlHg0SQtThO1fG/aRFoRLg2GQzycB64MlEUBTRScWhIHrX8yW0kKOlfwOo9uI9EdBQ==",
+    "Krafs.Rimworld.Ref/1.4.3704": {
+      "sha512": "INLy9Od0/msMfI9LROUaueV3QL8mnIB18xRjei5/Sw7HAYaw10emQKzts7la6AfSoFmB8mEY20bLVTnXNdeU7g==",
       "type": "package",
-      "path": "krafs.rimworld.ref/1.4.3641",
+      "path": "krafs.rimworld.ref/1.4.3704",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
         "README.md",
         "icon.png",
-        "krafs.rimworld.ref.1.4.3641.nupkg.sha512",
+        "krafs.rimworld.ref.1.4.3704.nupkg.sha512",
         "krafs.rimworld.ref.nuspec",
         "ref/net472/Assembly-CSharp-firstpass.dll",
         "ref/net472/Assembly-CSharp.dll",
@@ -430,10 +430,10 @@
         "microsoft.build.utilities.core.nuspec"
       ]
     },
-    "Microsoft.NETCore.Platforms/7.0.0": {
-      "sha512": "ZmCEGPLRDVy0WF6erzJw0G+puBM6s2DxRzRqvYvgHmXE6e34P0HVRtNl6s3nKKSDkD3DQH1QLKWL7fKe3GBSUA==",
+    "Microsoft.NETCore.Platforms/7.0.4": {
+      "sha512": "yLEHlNN7O5WiND89r42sepgVwy5W/ZoTiFEdJDV7MHR1lW02LL7Nipz2TD5qM/Kx9W3/k3NP+PAP2qUdOm+leg==",
       "type": "package",
-      "path": "microsoft.netcore.platforms/7.0.0",
+      "path": "microsoft.netcore.platforms/7.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -441,7 +441,7 @@
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.7.0.0.nupkg.sha512",
+        "microsoft.netcore.platforms.7.0.4.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
         "runtime.json",
         "useSharedDesignerContext.txt"
@@ -969,10 +969,10 @@
         "tasks/net472/TaskPubliciser.dll"
       ]
     },
-    "TeleCore/1.7.8.4": {
-      "sha512": "318nXu+p2sZEHE3Yows2XypBArZNozSOTeS+svNOtAttdET/p+dZsJZwTJRuws5ViysETrEqQhrgh08hbjqYXg==",
+    "TeleCore/1.8.9.3": {
+      "sha512": "DpecRCfEQd0S5YjwXj9J3XQLFWZ0uvCql663B15pOz4+YASKuZ1vafBop7Dy1bvHYmw7OJTth7LUv2e2sdR+Kw==",
       "type": "package",
-      "path": "telecore/1.7.8.4",
+      "path": "telecore/1.8.9.3",
       "files": [
         ".nupkg.metadata",
         "LICENSE.md",
@@ -980,7 +980,7 @@
         "TeleCore.jpg",
         "lib/net472/TeleCore.dll",
         "lib/net472/TeleCore.xml",
-        "telecore.1.7.8.4.nupkg.sha512",
+        "telecore.1.8.9.3.nupkg.sha512",
         "telecore.nuspec"
       ]
     },
@@ -1001,12 +1001,12 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
-      "Krafs.Rimworld.Ref >= 1.4.3641",
+      "Krafs.Rimworld.Ref >= 1.4.3704",
       "Lib.Harmony >= 2.2.2",
-      "Microsoft.NETCore.Platforms >= 7.0.0",
+      "Microsoft.NETCore.Platforms >= 7.0.4",
       "RimWorld.MultiplayerAPI >= 0.4.0",
       "TaskPubliciser >= 1.0.3",
-      "TeleCore >= 1.7.8.4",
+      "TeleCore >= 1.8.9.3",
       "UnlimitedHugs.Rimworld.HugsLib >= 10.0.1"
     ]
   },
@@ -1057,7 +1057,7 @@
         "dependencies": {
           "Krafs.Rimworld.Ref": {
             "target": "Package",
-            "version": "[1.4.3641, )",
+            "version": "[1.4.3704, )",
             "generatePathProperty": true
           },
           "Lib.Harmony": {
@@ -1067,7 +1067,7 @@
           },
           "Microsoft.NETCore.Platforms": {
             "target": "Package",
-            "version": "[7.0.0, )"
+            "version": "[7.0.4, )"
           },
           "RimWorld.MultiplayerAPI": {
             "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -1080,7 +1080,7 @@
           },
           "TeleCore": {
             "target": "Package",
-            "version": "[1.7.8.4, )"
+            "version": "[1.8.9.3, )"
           },
           "UnlimitedHugs.Rimworld.HugsLib": {
             "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -1088,7 +1088,7 @@
             "version": "[10.0.1, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

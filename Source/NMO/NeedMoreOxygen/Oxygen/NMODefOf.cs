@@ -7,15 +7,15 @@ using RimWorld;
 using TAE;
 using Verse;
 
-namespace NMO
+namespace NMO;
+
+[DefOf]
+public static class NMODefOf
 {
-    [DefOf]
-    public static class NMODefOf
-    {
-        public static AtmosphericDef Atmosphere_Oxygen;
-        public static TAERulesetDef OxygenAtmosphere;
-        public static HediffDef Hypoxia;
-        public static HediffDef CerebralHypoxia;
-        public static HediffDef HypoxiaSickness;
-    }
+    public static AtmosphericValueDef Atmosphere_Oxygen;
+    public static AtmosphericValueDef Atmosphere_CarbonMonoxide;
+    public static TAERulesetDef OxygenRuleset;
+    public static HediffDef Hypoxia;
+    public static HediffDef CerebralHypoxia;
+    public static HediffDef HypoxiaSickness;
 }

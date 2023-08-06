@@ -4,8 +4,17 @@
 	<TeleCore.NetworkValueDef>
 		<defName>Network_Oxygen</defName>
 		<label>oxygen</label>
+		<labelShort>O2</labelShort>
 		<collectionDef>AtmosphericNetwork</collectionDef>
 		<valueColor>(140, 230, 255)</valueColor>
+	</TeleCore.NetworkValueDef>
+	
+	<TeleCore.NetworkValueDef>
+		<defName>Network_CarbonMonoxide</defName>
+		<label>carbon monoxide</label>
+		<labelShort>CO</labelShort>
+		<collectionDef>AtmosphericNetwork</collectionDef>
+		<valueColor>(73, 76, 84)</valueColor>
 	</TeleCore.NetworkValueDef>
 
 </Defs>

@@ -1,29 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
-	<TAE.AtmosphericDef>
+	<TAE.AtmosphericValueDef>
 		<defName>Atmosphere_Oxygen</defName>
 		<label>oxygen</label>
 		<labelShort>O2</labelShort>
+		<collectionDef>Atmosphere_Air</collectionDef>
 		<atmosphericTag>Air</atmosphericTag>
 		<networkValue>Network_Oxygen</networkValue>
-		<valueColor>(25,125,255)</valueColor>
+		<valueColor>(140, 230, 255)</valueColor>
 		<useRenderLayer>false</useRenderLayer>
-	</TAE.AtmosphericDef>
+	</TAE.AtmosphericValueDef>
 	
-	<TAE.AtmosphericDef>
+	<TAE.AtmosphericValueDef>
 		<defName>Atmosphere_CarbonMonoxide</defName>
 		<label>carbon monoxide</label>
+		<collectionDef>Atmosphere_Air</collectionDef>
 		<labelShort>CO</labelShort>
 		<atmosphericTag>Air</atmosphericTag>
 		<networkValue>Network_Oxygen</networkValue>
-		<valueColor>(73,76,84)</valueColor>
+		<valueColor>(73, 76, 84)</valueColor>
 		<useRenderLayer>false</useRenderLayer>
-	</TAE.AtmosphericDef>
+	</TAE.AtmosphericValueDef>
 	
 	<TAE.TAERulesetDef>
-		<defName>OxygenAtmosphere</defName>
-		<occurence>AnyBiome</occurence>
+		<defName>OxygenRuleset</defName>
+		<realm>AnyBiome</realm>
 		<atmospheres>
 			<Atmosphere_Oxygen>1</Atmosphere_Oxygen>
 		</atmospheres>

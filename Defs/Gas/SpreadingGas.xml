@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TAE.SpreadingGasTypeDef>
+		<defName>SpreadingSmoke</defName>
+		<label>Smoke</label>
+		
+		<colorMin>(134,134,142)</colorMin>
+		<colorMax>(69,69,73)</colorMax>
+		
+		<maxDensityPerCell>100</maxDensityPerCell>
+		<minDissipationDensity>10</minDissipationDensity>
+		<minSpreadDensity>2</minSpreadDensity>
+		<dissipationAmount>1</dissipationAmount>
+		<spreadViscosity>0</spreadViscosity>
+		
+		<rotationSpeeds>10~20</rotationSpeeds>
+		<blockTurretTracking>true</blockTurretTracking>
+		<accuracyPenalty>0.3</accuracyPenalty>
+		
+		<dissipateTo IsNull="True"/>
+		
+	</TAE.SpreadingGasTypeDef>
+
+</Defs>
