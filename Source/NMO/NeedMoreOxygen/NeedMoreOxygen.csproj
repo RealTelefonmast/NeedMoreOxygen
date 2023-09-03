@@ -3,7 +3,7 @@
 
 	<PropertyGroup>
 		<RootNamespace>NMO</RootNamespace>
-		<AssemblyName>NeedMoreOxygen</AssemblyName>
+		<AssemblyName>TrueOxygen</AssemblyName>
 		<TargetFramework>net48</TargetFramework>
 		<LangVersion>latest</LangVersion>
 		<PlatformTarget>x64</PlatformTarget>

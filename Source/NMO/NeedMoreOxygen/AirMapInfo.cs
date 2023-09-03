@@ -35,11 +35,24 @@ public class AirSource
 
 public abstract class AtmosphereConverter
 {
-    protected RoomComponent_Atmosphere Atmosphere;
+    private RoomComponent_Atmosphere _cachedComp;
+    protected readonly Thing _sourceThing;
+    
+    protected RoomComponent_Atmosphere Atmosphere
+    {
+        get
+        {
+            if (_cachedComp == null || _cachedComp.Disbanded)
+            {
+                _cachedComp = _sourceThing?.GetRoom()?.GetRoomComp<RoomComponent_Atmosphere>();
+            }
+            return _cachedComp;
+        }
+    }
 
     public AtmosphereConverter(Thing thing)
     {
-        Atmosphere = thing.GetRoom().GetRoomComp<RoomComponent_Atmosphere>();
+        _sourceThing = thing;
     }
     
     public abstract void Tick();
@@ -47,16 +60,18 @@ public abstract class AtmosphereConverter
 
 public class OxygenBurner : AtmosphereConverter
 {
-    private ThingWithComps _sourceThing;
-    
     public OxygenBurner(ThingWithComps thing) : base(thing)
     {
-        _sourceThing = thing;
     }
     
     public override void Tick()
     {
         if (GenTicks.TicksAbs % 180 != 0) return;
+        if (Atmosphere == null)
+        {
+            Log.Warning($"Tried to tick oxygen burner with thing without a room: {_sourceThing}");
+            return;
+        }
         var result = Atmosphere.Volume.TryRemove(NMODefOf.Atmosphere_Oxygen, 10d);
         if (result)
         {
