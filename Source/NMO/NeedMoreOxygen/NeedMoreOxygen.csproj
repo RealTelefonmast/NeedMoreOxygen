@@ -36,17 +36,17 @@
 
     <PackageReference Include="Microsoft.NETCore.Platforms" Version="7.0.4" />
 
-    <PackageReference Include="TeleCore" Version="1.8.9.3" />
+    <PackageReference Include="TeleCore" Version="1.9.5.6" />
     <PackageReference Include="UnlimitedHugs.Rimworld.HugsLib" Version="10.0.1" ExcludeAssets="runtime" />
     <PackageReference Include="RimWorld.MultiplayerAPI" Version="0.4.0" ExcludeAssets="runtime" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="AtmosphereExtended">
-      <HintPath>..\..\AtmosphereExtended.dll</HintPath>
-    </Reference>
     <Reference Include="TeleCore">
       <HintPath>..\..\..\..\TeleCore.dll</HintPath>
+    </Reference>
+    <Reference Include="TrueAtmospheres">
+      <HintPath>..\..\..\..\TrueAtmospheres\Assemblies\TrueAtmospheres.dll</HintPath>
     </Reference>
   </ItemGroup>
     

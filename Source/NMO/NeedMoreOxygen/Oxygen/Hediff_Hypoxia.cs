@@ -31,6 +31,6 @@ public class Hediff_Hypoxia : Hediff
     
     public override bool CauseDeathNow()
     {
-        return ticksSinceHypoxic.TicksToSeconds() > 20f;
+        return ticksSinceHypoxic > 20f * GenTicks.TicksPerRealSecond;
     }
 }

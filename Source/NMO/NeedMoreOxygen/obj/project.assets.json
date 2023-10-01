@@ -251,22 +251,13 @@
           "build/TaskPubliciser.props": {}
         }
       },
-      "TeleCore/1.8.9.3": {
+      "TeleCore/1.9.5.6": {
         "type": "package",
-        "frameworkAssemblies": [
-          "System.Runtime",
-          "System.Runtime.InteropServices",
-          "System.Threading.Thread"
-        ],
         "compile": {
-          "lib/net472/TeleCore.dll": {
-            "related": ".xml"
-          }
+          "lib/net472/TeleCore.dll": {}
         },
         "runtime": {
-          "lib/net472/TeleCore.dll": {
-            "related": ".xml"
-          }
+          "lib/net472/TeleCore.dll": {}
         }
       },
       "UnlimitedHugs.Rimworld.HugsLib/10.0.1": {
@@ -1372,18 +1363,17 @@
         "tasks/net472/TaskPubliciser.dll"
       ]
     },
-    "TeleCore/1.8.9.3": {
-      "sha512": "DpecRCfEQd0S5YjwXj9J3XQLFWZ0uvCql663B15pOz4+YASKuZ1vafBop7Dy1bvHYmw7OJTth7LUv2e2sdR+Kw==",
+    "TeleCore/1.9.5.6": {
+      "sha512": "cQEGRch+7zAhXQ1i9VtSHEnN7v+ZC5HCpN8OqhjSjYNTfmDsZB6YG4FAwGjhpnWW+NmKQ373qBw5nQRmLT9ilw==",
       "type": "package",
-      "path": "telecore/1.8.9.3",
+      "path": "telecore/1.9.5.6",
       "files": [
         ".nupkg.metadata",
         "LICENSE.md",
         "README.md",
         "TeleCore.jpg",
         "lib/net472/TeleCore.dll",
-        "lib/net472/TeleCore.xml",
-        "telecore.1.8.9.3.nupkg.sha512",
+        "telecore.1.9.5.6.nupkg.sha512",
         "telecore.nuspec"
       ]
     },
@@ -1410,7 +1400,7 @@
       "Microsoft.NETFramework.ReferenceAssemblies >= 1.0.3",
       "RimWorld.MultiplayerAPI >= 0.4.0",
       "TaskPubliciser >= 1.0.3",
-      "TeleCore >= 1.8.9.3",
+      "TeleCore >= 1.9.5.6",
       "UnlimitedHugs.Rimworld.HugsLib >= 10.0.1"
     ]
   },
@@ -1427,12 +1417,14 @@
       "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TrueOxygen\\Source\\NMO\\NeedMoreOxygen\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\maxim\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net48"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Users\\maxim\\Desktop\\PackageStore": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -1483,7 +1475,7 @@
           },
           "TeleCore": {
             "target": "Package",
-            "version": "[1.8.9.3, )"
+            "version": "[1.9.5.6, )"
           },
           "UnlimitedHugs.Rimworld.HugsLib": {
             "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -1491,7 +1483,7 @@
             "version": "[10.0.1, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

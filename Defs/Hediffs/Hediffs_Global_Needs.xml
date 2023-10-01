@@ -17,12 +17,12 @@
 	<HediffDef ParentName="DiseaseBase">
 		<defName>HypoxiaSickness</defName>
 		<label>hypoxia sickness</label>
-		<description>After-effects of suffering hypoxia, the body may take a while to recover from low blood-oxygen.</description>
+		<description>The recovery process after a Hypoxia episode. The body needs time to restore adequate oxygen levels, leading to prolonged fatigue and reduced physical capabilities.</description>
 		<makesSickThought>true</makesSickThought>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
-				<disappearsAfterTicks>8000~12000</disappearsAfterTicks>
-				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>10000~15000</disappearsAfterTicks>
+            	<showRemainingTime>true</showRemainingTime>
 			</li>
 		</comps>
 		<stages>
@@ -51,7 +51,7 @@
 		<defName>Hypoxia</defName>
 		<label>hypoxia</label>
 		<hediffClass>NMO.Oxygen.Hediff_Hypoxia</hediffClass>
-		<description>N/A</description>
+		<description>Hypoxia is a condition in which there is not enough oxygen available to the body or a region of the body. Symptoms include shortness of breath, rapid breathing, and confusion. If left untreated, it could result in loss of consciousness and even death. Immediate medical attention is necessary.</description>
 		<lethalSeverity>1</lethalSeverity>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<!--
@@ -66,7 +66,10 @@
 		<stages>
 			<li>
 				<minSeverity>0.1</minSeverity>
-				<label>trivial</label>
+				<label>Early Signs</label>
+				<vomitMtbDays>3</vomitMtbDays>
+				<restFallFactor>1.1</restFallFactor>
+				<forgetMemoryThoughtMtbDays>3</forgetMemoryThoughtMtbDays>
 				<socialFightChanceFactor>1.5</socialFightChanceFactor>
 				<capMods>
 					<li>
@@ -81,8 +84,11 @@
 			</li>
 			<li>
 				<minSeverity>0.2</minSeverity>
-				<label>minor</label>
+				<label>Mild</label>
 				<socialFightChanceFactor>2</socialFightChanceFactor>
+				<vomitMtbDays>2</vomitMtbDays>
+				<restFallFactor>1.3</restFallFactor>
+				<forgetMemoryThoughtMtbDays>2</forgetMemoryThoughtMtbDays>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
@@ -100,8 +106,11 @@
 			</li>
 			<li>
 				<minSeverity>0.3</minSeverity>
-				<label>moderate</label>
+				<label>Progressive</label>
 				<socialFightChanceFactor>2.5</socialFightChanceFactor>
+				<vomitMtbDays>1</vomitMtbDays>
+				<restFallFactor>1.5</restFallFactor>
+				<forgetMemoryThoughtMtbDays>1</forgetMemoryThoughtMtbDays>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
@@ -119,8 +128,11 @@
 			</li>
 			<li>
 				<minSeverity>0.4</minSeverity>
-				<label>severe</label>
+				<label>Critical</label>
 				<socialFightChanceFactor>3</socialFightChanceFactor>
+				<vomitMtbDays>0.5</vomitMtbDays>
+				<restFallFactor>1.7</restFallFactor>
+				<forgetMemoryThoughtMtbDays>1</forgetMemoryThoughtMtbDays>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
@@ -142,8 +154,12 @@
 			</li>
 			<li>
 				<minSeverity>0.5</minSeverity>
-				<label>extreme</label>
+				<label>Fatal</label>
 				<lifeThreatening>true</lifeThreatening>
+				<socialFightChanceFactor>3</socialFightChanceFactor>
+				<vomitMtbDays>0.25</vomitMtbDays>
+				<restFallFactor>2</restFallFactor>
+				<forgetMemoryThoughtMtbDays>1</forgetMemoryThoughtMtbDays>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
@@ -164,6 +180,92 @@
 				</capMods>
 			</li>
 		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Hyperoxia</defName>
+		<label>hyperoxia</label>
+		<description>Hyperoxia, or oxygen toxicity, occurs when the body is exposed to an excess level of oxygen. Increased oxygen levels can damage cells and are especially harmful to the lungs and central nervous system.</description>
+		<lethalSeverity>1</lethalSeverity>
+		<stages>
+		   <li>
+			   <minSeverity>0.1</minSeverity>
+			   <label>Mild Oxygen Toxicity</label>
+			   <painOffset>0.1</painOffset>
+			   <becomeVisible>true</becomeVisible>
+			   <vomitMtbDays>7</vomitMtbDays>
+			   <capMods>
+				   <li>
+					   <capacity>Breathing</capacity>
+					   <offset>-0.05</offset>
+				   </li>
+			   </capMods>
+		   </li>
+		   <li>
+			   <minSeverity>0.3</minSeverity>
+			   <label>Moderate Oxygen Toxicity</label>
+			   <becomeVisible>true</becomeVisible>
+			   <painOffset>0.2</painOffset>
+			   <vomitMtbDays>3</vomitMtbDays>
+			   <restFallFactor>1.2</restFallFactor>
+			   <mentalBreakMtbDays>5</mentalBreakMtbDays>
+			   <capMods>
+				   <li>
+					   <capacity>Breathing</capacity>
+					   <offset>-0.15</offset>
+				   </li>
+			   </capMods>
+		   </li>
+		   <li>
+			   <minSeverity>0.6</minSeverity>
+			   <label>Severe Oxygen Toxicity</label>
+			   <becomeVisible>true</becomeVisible>
+			   <lifeThreatening>true</lifeThreatening>
+			   <painOffset>0.3</painOffset>
+			   <vomitMtbDays>1</vomitMtbDays>
+			   <restFallFactor>1.5</restFallFactor>
+			   <mentalBreakMtbDays>2</mentalBreakMtbDays>
+			   <capMods>
+				   <li>
+					   <capacity>Breathing</capacity>
+					   <offset>-0.3</offset>
+				   </li>
+			   </capMods>
+		   </li>
+		   <li>
+				<minSeverity>0.9</minSeverity>
+				<label>Fatal Oxygen Toxicity</label>
+				<becomeVisible>true</becomeVisible>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.5</painOffset>
+				<deathMtbDays>3</deathMtbDays>
+				<mtbDeathDestroysBrain>true</mtbDeathDestroysBrain>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.90</offset>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.80</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>-0.25</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>-0.35</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<li>
+						<stat>MoveSpeedGlobal</stat>
+						<value>-0.9</value>
+					</li>
+				</statOffsets>
+        	</li>
+	   </stages>
 	</HediffDef>
 
 </Defs>

@@ -14,12 +14,14 @@
         "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TrueOxygen\\Source\\NMO\\NeedMoreOxygen\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\maxim\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net48"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Users\\maxim\\Desktop\\PackageStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -70,7 +72,7 @@
             },
             "TeleCore": {
               "target": "Package",
-              "version": "[1.8.9.3, )"
+              "version": "[1.9.5.6, )"
             },
             "UnlimitedHugs.Rimworld.HugsLib": {
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -78,7 +80,7 @@
               "version": "[10.0.1, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
