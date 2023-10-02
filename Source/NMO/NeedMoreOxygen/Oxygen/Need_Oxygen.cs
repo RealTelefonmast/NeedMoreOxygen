@@ -19,6 +19,14 @@ public enum OxygenCategory : byte
     Hypoxia
 }
 
+//Basis:
+// We assume a human breathes 1L of pure oxygen per minute
+// This implies 60L per hour
+// One unit of oxygen is 10L
+// The standard breathable oxygen level is 21% of the atmosphere
+// Hypoxia begins at 19.5% -> a drop of 1.5% is enough to start being dangerous
+// The player should
+
 public class Need_Oxygen : Need
 {
     private Comp_PawnAtmosphereTracker _atmosTracker;
@@ -29,6 +37,10 @@ public class Need_Oxygen : Need
     public float BreathingLevelRequired => BreathingProps?.OxygenLevelPercentageWantBreathe ?? 0.75f;
     public float PercentageThreshUrgentlyOxygenDeprived => BreathingLevelRequired * 0.4f;
 
+    //Consumption Rate
+    public float RatePerHour => 0.125F; // ~ 1.5 / 15h | 
+    public float RatePerMinute => 0.001953125F; //Approximation of 0.125F / 60 in binary
+    
     /*
     private float HypoxiaFactorBase
     {

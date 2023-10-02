@@ -9,12 +9,25 @@ namespace NMO.Oxygen
 {
     public class BreathingExtension : DefModExtension
     {
-        public float OxygenLevelPercentageWantBreathe
+        public List<BreathingRequirements> requiredAtmospheres;
+        
+        public void PostLoad()
         {
-            get
-            {
-                return 1;
-            }
+            
         }
 	}
+
+    public class BreathingRequirements
+    {
+        public AtmosphericValueDef atmosphere;
+        public float baseLevel = 0.21f;
+        public List<BreathingStage> stages;
+    }
+
+    public class BreathingStage
+    {
+        public string label;
+        public float level;
+        public List<HediffGiver> hediffGivers;
+    }
 }
