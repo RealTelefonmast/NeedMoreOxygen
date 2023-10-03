@@ -239,6 +239,15 @@
           "build/TaskPubliciser.props": {}
         }
       },
+      "TeleCore/1.9.5.6": {
+        "type": "package",
+        "compile": {
+          "lib/net472/TeleCore.dll": {}
+        },
+        "runtime": {
+          "lib/net472/TeleCore.dll": {}
+        }
+      },
       "UnlimitedHugs.Rimworld.HugsLib/10.0.1": {
         "type": "package",
         "dependencies": {
@@ -951,6 +960,20 @@
         "tasks/net472/TaskPubliciser.dll"
       ]
     },
+    "TeleCore/1.9.5.6": {
+      "sha512": "cQEGRch+7zAhXQ1i9VtSHEnN7v+ZC5HCpN8OqhjSjYNTfmDsZB6YG4FAwGjhpnWW+NmKQ373qBw5nQRmLT9ilw==",
+      "type": "package",
+      "path": "telecore/1.9.5.6",
+      "files": [
+        ".nupkg.metadata",
+        "LICENSE.md",
+        "README.md",
+        "TeleCore.jpg",
+        "lib/net472/TeleCore.dll",
+        "telecore.1.9.5.6.nupkg.sha512",
+        "telecore.nuspec"
+      ]
+    },
     "UnlimitedHugs.Rimworld.HugsLib/10.0.1": {
       "sha512": "LSviprXJV4k2+R1IShhozRgI2joyz8BSx3Mmwddb+iivz4EBgwx7i8bt0krrIyGuVRPcwThrHDEhuo9ErgMlZQ==",
       "type": "package",
@@ -978,19 +1001,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\switenko.GROUP\\.nuget\\packages\\": {}
+    "C:\\Users\\maxim\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\switenko.GROUP\\Desktop\\GitHub\\NeedMoreOxygen\\Source\\NMO\\NeedMoreOxygen\\NeedMoreOxygen.csproj",
+      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TrueOxygen\\Source\\NMO\\NeedMoreOxygen\\NeedMoreOxygen.csproj",
       "projectName": "TrueOxygen",
-      "projectPath": "C:\\Users\\switenko.GROUP\\Desktop\\GitHub\\NeedMoreOxygen\\Source\\NMO\\NeedMoreOxygen\\NeedMoreOxygen.csproj",
-      "packagesPath": "C:\\Users\\switenko.GROUP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\switenko.GROUP\\Desktop\\GitHub\\NeedMoreOxygen\\Source\\NMO\\NeedMoreOxygen\\obj\\",
+      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TrueOxygen\\Source\\NMO\\NeedMoreOxygen\\NeedMoreOxygen.csproj",
+      "packagesPath": "C:\\Users\\maxim\\.nuget\\packages\\",
+      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TrueOxygen\\Source\\NMO\\NeedMoreOxygen\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\switenko.GROUP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -998,9 +1021,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\switenko.GROUP\\Desktop\\PackgeStore": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://pkgs.dev.azure.com/Riverbird/DevPublic/_packaging/NugetPackages/nuget/v3/index.json": {}
+        "C:\\Users\\maxim\\Desktop\\PackageStore": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net48": {
@@ -1051,19 +1073,8 @@
             "version": "[10.0.1, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1102",
-      "level": "Error",
-      "message": "Unable to find package TeleCore with version (>= 1.9.5.6)\r\n  - Found 102 version(s) in nuget.org [ Nearest version: 1.7.8.3 ]\r\n  - Found 11 version(s) in Local [ Nearest version: 1.8.8.3 ]\r\n  - Found 0 version(s) in Microsoft Visual Studio Offline Packages\r\n  - Found 0 version(s) in Riverbird",
-      "libraryId": "TeleCore",
-      "targetGraphs": [
-        ".NETFramework,Version=v4.8"
-      ]
-    }
-  ]
+  }
 }

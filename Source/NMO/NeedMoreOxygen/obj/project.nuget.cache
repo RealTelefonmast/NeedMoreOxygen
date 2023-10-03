@@ -1,34 +1,25 @@
 {
   "version": 2,
-  "dgSpecHash": "bZYzTNgXZV402jBHKXH6+6jQHc2bU4O7UGp0feF+IfybxUsQJTxFPWphmQAVQ30GTJAQQhSdbaHL7iuw1NEgYw==",
-  "success": false,
-  "projectFilePath": "C:\\Users\\switenko.GROUP\\Desktop\\GitHub\\NeedMoreOxygen\\Source\\NMO\\NeedMoreOxygen\\NeedMoreOxygen.csproj",
+  "dgSpecHash": "QjG+lSz+qH+cX0uVfyIcvskJY5jlqfhBsWIehur066F32FZao9mOucK5zj1cvyZLCeLW40S2ZVSOMkYvphQnHA==",
+  "success": true,
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\TrueOxygen\\Source\\NMO\\NeedMoreOxygen\\NeedMoreOxygen.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\switenko.GROUP\\.nuget\\packages\\krafs.rimworld.ref\\1.4.3704\\krafs.rimworld.ref.1.4.3704.nupkg.sha512",
-    "C:\\Users\\switenko.GROUP\\.nuget\\packages\\lib.harmony\\2.2.2\\lib.harmony.2.2.2.nupkg.sha512",
-    "C:\\Users\\switenko.GROUP\\.nuget\\packages\\microsoft.build.framework\\15.1.548\\microsoft.build.framework.15.1.548.nupkg.sha512",
-    "C:\\Users\\switenko.GROUP\\.nuget\\packages\\microsoft.build.utilities.core\\15.1.548\\microsoft.build.utilities.core.15.1.548.nupkg.sha512",
-    "C:\\Users\\switenko.GROUP\\.nuget\\packages\\microsoft.netcore.platforms\\7.0.4\\microsoft.netcore.platforms.7.0.4.nupkg.sha512",
-    "C:\\Users\\switenko.GROUP\\.nuget\\packages\\rimworld.multiplayerapi\\0.4.0\\rimworld.multiplayerapi.0.4.0.nupkg.sha512",
-    "C:\\Users\\switenko.GROUP\\.nuget\\packages\\system.collections\\4.0.11\\system.collections.4.0.11.nupkg.sha512",
-    "C:\\Users\\switenko.GROUP\\.nuget\\packages\\system.diagnostics.debug\\4.0.11\\system.diagnostics.debug.4.0.11.nupkg.sha512",
-    "C:\\Users\\switenko.GROUP\\.nuget\\packages\\system.globalization\\4.0.11\\system.globalization.4.0.11.nupkg.sha512",
-    "C:\\Users\\switenko.GROUP\\.nuget\\packages\\system.runtime\\4.1.0\\system.runtime.4.1.0.nupkg.sha512",
-    "C:\\Users\\switenko.GROUP\\.nuget\\packages\\system.runtime.interopservices\\4.1.0\\system.runtime.interopservices.4.1.0.nupkg.sha512",
-    "C:\\Users\\switenko.GROUP\\.nuget\\packages\\system.threading\\4.0.11\\system.threading.4.0.11.nupkg.sha512",
-    "C:\\Users\\switenko.GROUP\\.nuget\\packages\\system.threading.thread\\4.0.0\\system.threading.thread.4.0.0.nupkg.sha512",
-    "C:\\Users\\switenko.GROUP\\.nuget\\packages\\taskpubliciser\\1.0.3\\taskpubliciser.1.0.3.nupkg.sha512",
-    "C:\\Users\\switenko.GROUP\\.nuget\\packages\\unlimitedhugs.rimworld.hugslib\\10.0.1\\unlimitedhugs.rimworld.hugslib.10.0.1.nupkg.sha512"
+    "C:\\Users\\maxim\\.nuget\\packages\\krafs.rimworld.ref\\1.4.3704\\krafs.rimworld.ref.1.4.3704.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\lib.harmony\\2.2.2\\lib.harmony.2.2.2.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\microsoft.build.framework\\15.1.548\\microsoft.build.framework.15.1.548.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\microsoft.build.utilities.core\\15.1.548\\microsoft.build.utilities.core.15.1.548.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\microsoft.netcore.platforms\\7.0.4\\microsoft.netcore.platforms.7.0.4.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\rimworld.multiplayerapi\\0.4.0\\rimworld.multiplayerapi.0.4.0.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\system.collections\\4.0.11\\system.collections.4.0.11.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\system.diagnostics.debug\\4.0.11\\system.diagnostics.debug.4.0.11.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\system.globalization\\4.0.11\\system.globalization.4.0.11.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\system.runtime\\4.1.0\\system.runtime.4.1.0.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\system.runtime.interopservices\\4.1.0\\system.runtime.interopservices.4.1.0.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\system.threading\\4.0.11\\system.threading.4.0.11.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\system.threading.thread\\4.0.0\\system.threading.thread.4.0.0.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\taskpubliciser\\1.0.3\\taskpubliciser.1.0.3.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\telecore\\1.9.5.6\\telecore.1.9.5.6.nupkg.sha512",
+    "C:\\Users\\maxim\\.nuget\\packages\\unlimitedhugs.rimworld.hugslib\\10.0.1\\unlimitedhugs.rimworld.hugslib.10.0.1.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1102",
-      "level": "Error",
-      "message": "Unable to find package TeleCore with version (>= 1.9.5.6)\r\n  - Found 102 version(s) in nuget.org [ Nearest version: 1.7.8.3 ]\r\n  - Found 11 version(s) in Local [ Nearest version: 1.8.8.3 ]\r\n  - Found 0 version(s) in Microsoft Visual Studio Offline Packages\r\n  - Found 0 version(s) in Riverbird",
-      "libraryId": "TeleCore",
-      "targetGraphs": [
-        ".NETFramework,Version=v4.8"
-      ]
-    }
-  ]
+  "logs": []
 }
